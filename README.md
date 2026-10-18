@@ -8,3 +8,7 @@ resources, tests, `pyproject.toml`, and GUI entry point live together under `app
 target project. Users can install its wheel with `pipx` or `pip`; native OS bundles are additional
 release artifacts built from the same application source. This behavior pack contains instructions
 for producing both forms, not a copy of a finished application.
+
+The same behavior pack can also produce a standalone Python library, a command-line package, or
+both under `packages/python/`. Those deliverables have no GUI requirement. A PRD may select both
+the PySide6 app and the standalone package; they remain independently buildable and installable.

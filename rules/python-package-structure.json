@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "framework": "python-package",
+  "target_root": "packages/python",
+  "required_paths": ["pyproject.toml", "README.md", "src", "tests", "tests/unit"],
+  "required_directories": ["src", "tests", "tests/unit"],
+  "module_path_pattern": "src/<module>",
+  "module_naming": {
+    "style": "snake_case",
+    "ambiguous_names": ["core", "common", "manager", "utils"],
+    "familiar_fallback_names": ["accounts", "authentications", "users", "notifications", "settings", "reports", "tools", "commands"],
+    "responsibility_packages": [],
+    "max_lines": [{"globs": ["**/*.py"], "maximum": 300}]
+  },
+  "forbidden_patterns": ["secrets in source control", "shell execution of user-controlled text"]
+}

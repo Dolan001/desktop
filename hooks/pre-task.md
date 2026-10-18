@@ -1,3 +1,4 @@
 # Pre-task
 
-Confirm the task selects PySide6, owns desktop paths, and identifies observable acceptance behavior.
+Confirm the task selects a PySide6 app, a standalone Python package, or both; owns the corresponding
+paths; and identifies observable acceptance behavior.

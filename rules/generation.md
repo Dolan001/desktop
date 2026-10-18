@@ -1,7 +1,7 @@
 # Generation
 
-Generate only inside leased target paths. Provide a `--smoke-test` or equivalent bounded launch mode
-for CI. Include resources in the package and register deterministic commands in
-`.ai/test-commands.json`. Never add platform signing material.
-The generated README must include terminal install, launch, upgrade, and uninstall commands for the
-Python package, plus native installer instructions only for bundles actually produced and tested.
+Generate only inside leased target paths. Provide a bounded smoke mode for selected GUI and CLI
+entry points. Include resources in their owning package and register deterministic commands in
+`.ai/test-commands.json`. Never add platform signing material. Document terminal install, launch or
+import, upgrade, and uninstall commands for each selected Python project. Document native installer
+instructions only for GUI bundles actually produced and tested.

@@ -6,6 +6,9 @@
     {"name": "create-desktop-app", "path": "skills/create-desktop-app/SKILL.md"},
     {"name": "implement-desktop-vertical-slice", "path": "skills/implement-desktop-vertical-slice/SKILL.md"},
     {"name": "package-desktop-app", "path": "skills/package-desktop-app/SKILL.md"},
-    {"name": "verify-desktop-delivery", "path": "skills/verify-desktop-delivery/SKILL.md"}
+    {"name": "verify-desktop-delivery", "path": "skills/verify-desktop-delivery/SKILL.md"},
+    {"name": "create-python-package", "path": "skills/create-python-package/SKILL.md"},
+    {"name": "implement-python-package-vertical-slice", "path": "skills/implement-python-package-vertical-slice/SKILL.md"},
+    {"name": "verify-python-package", "path": "skills/verify-python-package/SKILL.md"}
   ]
 }
