@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "framework": "pyside6",
+  "format": "markdown-first",
+  "skills": [
+    {"name": "create-desktop-app", "path": "skills/create-desktop-app/SKILL.md"},
+    {"name": "implement-desktop-vertical-slice", "path": "skills/implement-desktop-vertical-slice/SKILL.md"},
+    {"name": "package-desktop-app", "path": "skills/package-desktop-app/SKILL.md"},
+    {"name": "verify-desktop-delivery", "path": "skills/verify-desktop-delivery/SKILL.md"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "format": "markdown-first",
+  "path_pattern": "agents/{agent}.md",
+  "framework": "pyside6",
+  "agents": [
+    {"agent": "desktop-solution-architect", "purpose": "Map desktop requirements to application, window, interaction, packaging, and platform contracts.", "writes_application_code": false},
+    {"agent": "desktop-implementer", "purpose": "Implement requirement-backed PySide6 desktop slices and Python packaging in the target monorepo.", "writes_application_code": true, "allowed_target_paths": ["apps/desktop/**", "tests/desktop/**", ".ai/evidence/**", "artifacts/desktop/**"], "maximum_retries_per_failure": 2},
+    {"agent": "desktop-independent-verifier", "purpose": "Independently verify behavior, accessibility, resource usage, packaging, installation, and platform evidence.", "writes_application_code": false, "allowed_target_paths": [".ai/evidence/**", "artifacts/desktop/**"]}
+  ]
+}

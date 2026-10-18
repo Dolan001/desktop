@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "framework": "pyside6",
+  "target_root": "apps/desktop",
+  "required_paths": ["pyproject.toml", "README.md", ".gitignore", "src", "tests", "tests/unit", "tests/ui"],
+  "required_directories": ["src", "tests", "tests/unit", "tests/ui"],
+  "feature_path_pattern": "src/<module>/features/<feature>",
+  "module_path_pattern": "src/<module>",
+  "module_naming": {
+    "style": "snake_case",
+    "ambiguous_names": ["core", "common", "manager", "utils", "desktop"],
+    "familiar_fallback_names": ["accounts", "authentications", "users", "notifications", "settings", "animations", "movement", "tray", "updates", "installations", "reports"],
+    "responsibility_packages": [],
+    "max_lines": [{"globs": ["ui/**/*.py", "services/**/*.py", "domain/**/*.py"], "maximum": 300}]
+  },
+  "required_feature_paths": ["domain", "services", "ui"],
+  "source_rules": [
+    {"id": "no-shell-execution", "globs": ["src/**/*.py"], "pattern": "shell\\s*=\\s*True", "ignore_case": true, "scan_strings": false, "message": "Desktop processes must use argument arrays without a shell."}
+  ],
+  "forbidden_patterns": ["secrets or signing material in source control", "blocking work on the Qt UI thread", "shell execution of user-controlled text", "application code copied from the behavior pack"]
+}
